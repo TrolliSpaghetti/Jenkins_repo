@@ -14,11 +14,7 @@ pipeline {
 
       steps {
 
-        sh '''
-
-          java -version
-
-        '''
+        echo env.BRANCH_NAME
 
       }
 
