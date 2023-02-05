@@ -16,7 +16,7 @@ pipeline {
         echo "Branch Name"
         echo env.BRANCH_NAME
         echo "Change_Target" 
-        echo "CHANGE Target" env.CHANGE_TARGET
+        echo env.CHANGE_TARGET
 
       }
 
