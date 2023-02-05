@@ -7,7 +7,7 @@ pipeline {
     buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')
 
   }
-
+  def BRANCH_NAME = env.BRANCH_NAME ?: "master"
   stages {
 
     stage('Hello') {
