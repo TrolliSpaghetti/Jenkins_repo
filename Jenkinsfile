@@ -40,6 +40,8 @@ pipeline {
         echo env.BRANCH_NAME
         echo "Change_Target" 
         echo env.CHANGE_TARGET
+        echo "Wrokspace" 
+        echo env.WORKSPACE
 
       }
 
