@@ -12,9 +12,13 @@ pipeline {
     stage('Hello') {
       when {
           expression {
-            return fileExists('README.md ')
+            return fileExists('README.md')
           }
         }
+      steps {
+        echo 'file exist!!'
+    }
+    stage('Hello2')
       steps {
         echo "Branch Name"
         echo env.BRANCH_NAME
