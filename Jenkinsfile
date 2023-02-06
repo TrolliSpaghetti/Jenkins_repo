@@ -17,7 +17,8 @@ pipeline {
         }
       steps {
         echo 'file exist!!'
-    }
+      }
+    } 
     stage('Hello2')
       steps {
         echo "Branch Name"
