@@ -10,9 +10,12 @@ pipeline {
   stages {
 
     stage('Hello') {
-
+      when {
+          expression {
+            return fileExists('file.txt')
+          }
+        }
       steps {
-
         echo "Branch Name"
         echo env.BRANCH_NAME
         echo "Change_Target" 
