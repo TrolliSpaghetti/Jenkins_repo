@@ -19,8 +19,23 @@ pipeline {
         echo 'file exist!!'
       }
     } 
+    when {
+          expression {
+            return fileExists('READMEx.md')
+          }
+        }
     stage('Hello2') {
       steps {
+        echo "Branch Name"
+        echo env.BRANCH_NAME
+        echo "Change_Target" 
+        echo env.CHANGE_TARGET
+
+      }
+
+    }
+       stage('Hello3') {
+        steps {
         echo "Branch Name"
         echo env.BRANCH_NAME
         echo "Change_Target" 
