@@ -12,7 +12,7 @@ pipeline {
     stage('Hello') {
       when {
           expression {
-            return fileExists('file.txt')
+            return fileExists('README.md ')
           }
         }
       steps {
